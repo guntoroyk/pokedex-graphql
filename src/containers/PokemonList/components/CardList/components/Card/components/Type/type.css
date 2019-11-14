@@ -1,0 +1,15 @@
+.box-type {
+  display: flex;
+  width: 50px;
+  background: #9ACC4F;
+  color: white;
+  border-radius: 3.5px;
+  justify-content: center;
+  padding: 0.5px 5px;
+  padding-bottom: 2px;
+  margin: 3px 1px;
+}
+
+.box-type span {
+  font-size: 0.8em;
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  padding: 20px 60px;
+}
+
+.btnLoadMore {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btnLoadMore button {
+  cursor: pointer;
+  padding: 7px 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95em;
+  color: white;
+  background: rgb(38, 149, 201);
+}
+
+.btnLoadMore button:hover {
+  background: #1B82B1;
+}
