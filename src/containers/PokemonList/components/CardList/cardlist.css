@@ -11,13 +11,15 @@
   padding: 20px 60px;
 }
 
-.btnLoadMore {
+.load-more {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
-.btnLoadMore button {
+.load-more button {
   cursor: pointer;
   padding: 7px 30px;
   border-radius: 5px;
@@ -27,6 +29,6 @@
   background: rgb(38, 149, 201);
 }
 
-.btnLoadMore button:hover {
+.load-more button:hover {
   background: #1B82B1;
 }
