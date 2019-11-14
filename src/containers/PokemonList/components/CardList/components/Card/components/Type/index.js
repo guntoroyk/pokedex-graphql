@@ -6,7 +6,7 @@ const Type = (props) => {
   
   return (
     <div className='box-type'>
-      <span> { type ? type.type : '' } </span>
+      <span> { type ? type : '' } </span>
     </div>
   );
 };

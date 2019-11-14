@@ -6,7 +6,8 @@ export const FETCH_POKEMONS = gql`
       id,
       number,
       name,
-      types
+      types,
+      image
     }
   }
 `;

@@ -9,14 +9,16 @@ const Card = (props) => {
 
   return (
     <>
-      <div className='card' onClick="" >
+      <div className='card' >
         <div className='card-image'>
-         <img src="https://img.pokemondb.net/artwork/butterfree.jpg" alt="avatar"></img>
+         <img src={ pokemon.image } alt="avatar"></img>
         </div>
         <div className='card-container'>
-          <h4><b>Bulbasaur</b></h4>
+          <h4><b> { pokemon.name } </b></h4>
           <div className='type-list'>
-            <Type type={ { type: 'Grass' } } />
+            { pokemon.types.map((type, i) => (
+              <Type type={ type } key={ i } />
+            ))}
           </div>
         </div>
       </div>
