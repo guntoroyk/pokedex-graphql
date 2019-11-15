@@ -37,10 +37,24 @@ const CardList = () => {
         setDataPokemons(data.pokemons);
       }
     } else {
-      let pokemonName = new RegExp(search, 'i');
-      let filtered = data.pokemons.filter(el => {
-        return pokemonName.test(el.name);
-      });
+      // let pokemonName = new RegExp(search, 'i');
+      // let pokemonType = new RegExp(search, 'i');
+      // let filtered = data.pokemons.filter(el => {
+      //   // console.log(el.types, pokemonType)
+      //   return el.types.includes(pokemonType);
+      // });
+      // setDataPokemons(filtered);
+
+      let pokemonsTypes = search ? search.replace(/\s+/g, '').split(',') : [];
+      let filtered = [];
+
+      for (let i = 0; i < data.pokemons.length; i++) {
+        for (let j = 0; j < data.pokemons[i].types.length; j++) {
+          if (pokemonsTypes.includes(data.pokemons[i].types[j])) {
+            filtered.push(data.pokemons[i]);
+          };
+        };
+      };
       setDataPokemons(filtered);
     };
     // eslint-disable-next-line
