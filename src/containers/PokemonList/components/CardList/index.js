@@ -37,14 +37,6 @@ const CardList = () => {
         setDataPokemons(data.pokemons);
       }
     } else {
-      // let pokemonName = new RegExp(search, 'i');
-      // let pokemonType = new RegExp(search, 'i');
-      // let filtered = data.pokemons.filter(el => {
-      //   // console.log(el.types, pokemonType)
-      //   return el.types.includes(pokemonType);
-      // });
-      // setDataPokemons(filtered);
-
       let pokemonsTypes = search ? search.replace(/\s+/g, '').split(',') : [];
       let filtered = [];
 
@@ -67,9 +59,10 @@ const CardList = () => {
     return (
       <div className='container'>
         <div className='filter'>
+          <h3>Search by Types</h3>
           <input 
             type='text' 
-            placeholder='search by type, eg: Grass, Poison'
+            placeholder='Grass, Poison, Normal'
             value={ search }
             onChange={ e  => setSearch(e.target.value) }
           />

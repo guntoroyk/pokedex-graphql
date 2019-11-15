@@ -1,8 +1,14 @@
 import React from 'react';
+import './index.css';
+import Navbar from '../../components/Navbar';
+import Detail from './components/Detail';
 
 const PokemonDetail = () => {
   return (
-    <div>INI HALAMAN DETAIL</div>
+    <>
+     <Navbar />
+     <Detail />
+    </>
   );
 };
 

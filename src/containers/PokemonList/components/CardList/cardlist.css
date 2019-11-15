@@ -32,3 +32,23 @@
 .load-more button:hover {
   background: #1B82B1;
 }
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0 0 150px;
+}
+
+.filter h3 {
+  margin: 10px 0 7px 0;
+}
+
+.filter input {
+  background-color: rgba(224, 234, 245, 0.842);
+  border-radius: 5px;
+  padding: 10px 20px;
+  border-style: none;
+  font-size: 1.1rem;
+}

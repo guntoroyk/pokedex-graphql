@@ -9,6 +9,28 @@ export const FETCH_POKEMONS = gql`
       name,
       types,
       image
+     }
     }
+`;
+
+export const GET_POKEMON_DETAILS = gql`
+  query 
+    getPokemonDetails ($name: String) {
+      pokemon (name: $name) {
+        number,
+        name,
+        height {
+          minimum
+        },
+        weight {
+          minimum
+        },
+        classification,
+        fleeRate,
+        maxCP,
+        maxHP,
+        types,
+        image
+      }
     }
 `;
